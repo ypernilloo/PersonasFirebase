@@ -27,6 +27,12 @@ export class ProductoComponent implements OnInit {
       this.cantidad = this.persons.length;
 
     });
+
+
+
+    this.PersonService.getMessages().subscribe(message => {
+      console.log(message);
+    });
   }
 
   BorrarProducto(event, producto) {

@@ -6,15 +6,12 @@
             <app-formulario></app-formulario>
 
 
-            <div #alerta class="alert alert-success alert-dismissible fade hide mt-4" role="alert">
-                El Usuario ha sido actualizado.
-            </div>
 
         </div>
         <div class="col-md-8 ">
 
             <div class="row" *ngIf="cantidad > 0; else noproducts">
-                <div *ngFor="let p of persons " class="col-md-4 col-12 mt-3 ">
+                <div *ngFor="let p of persons " class="col-md-4 col-12 mt-3 mt-md-0">
                     <div class="card text-white bg-secondary mb-3 ">
                         <div class="card-body ">
                             <h5 class="card-title ">Nombre: </h5>
